@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="stylesheet/stylesheet.css" rel="stylesheet">
 </head>
-<style>
-    .content {
-        margin-top: 1em;
-        align: center;
-    }
-</style>
-<body>
 
+<body>
 <div class="container">
     <?php if(isset($_COOKIE['message'])) { ?>
         <div class="alert alert-warning" role="alert" id="message">
             <?php echo $_COOKIE['message']; ?>
         </div>
     <?php } ?>
+
+<!--    class="col-md-4 control-label-->
     <div class="content">
-        <form name="soknadform" class="form-horizontal" action="Action_form.php" method="post">
+
+        <div class="image_container">
+            <img src="../images/logo.svg" class="brand_logo" alt="Logo">
+        </div>
+
+        <form name="soknadform" action="Action_form.php" method="post" class="form_soknad">
             <div class="form-group">
-                <label class="col-md-4 control-label">Fullt Navn</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="navn">Fullt Navn</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input id="navn" name="navn" placeholder="Fullt navn" class="form-control" required="true" value="" type="text">
                     </div>
@@ -34,8 +37,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Fødsels- og personnummer</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="fodsel">Fødsels- og personnummer</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input id="fodsel" name="fodsel" placeholder="Fødsels- og personnummer" class="form-control" required="true" value="" type="text">
                     </div>
@@ -43,8 +47,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Adresse</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="adresse">Adresse</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input id="adresse" name="adresse" placeholder="Adresse" class="form-control" required="true" value="" type="text">
                     </div>
@@ -53,8 +58,9 @@
 
 
             <div class="form-group">
-                <label class="col-md-4 control-label">By</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="city">By</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input id="city" name="city" placeholder="By" class="form-control" required="true" value="" type="text">
                     </div>
@@ -62,8 +68,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Postkode</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="postkode">Postkode</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input id="postkode" name="postkode" placeholder="Postkode" class="form-control" required="true" value="" type="text">
                     </div>
@@ -71,8 +78,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Telefon nummer</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="telefon">Telefon nummer</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
                         <input id="telefon" name="telefon" placeholder="Telefon nummer" class="form-control" required="true" value="" type="text">
                     </div>
@@ -80,8 +88,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Email</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="email">Email</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                         <input id="email" name="email" placeholder="Email" class="form-control" required="true" value="" type="text">
                     </div>
@@ -89,8 +98,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Har du førerkort og/eller tilgang til bil?</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="bil">Har du førerkort og/eller tilgang til bil?</label>
                     <div class="input-group">
                         <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
                         <select class="selectpicker form-control" id="bil" name ="bil">
@@ -103,8 +113,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Norskferdigheter 1-5</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="norskferd">Norskferdigheter 1-5</label>
                     <div class="input-group">
                         <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
                         <select class="selectpicker form-control" id="norskferd" name ="norskferd">
@@ -119,8 +130,9 @@
             </div>
 
             <div class="form-group">
-                <label class="col-md-4 control-label">Dataferdigheter 1-5</label>
-                <div class="col-md-8 inputGroupContainer">
+
+                <div class="col-md-6 inputGroupContainer">
+                    <label for="dataferd">Dataferdigheter 1-5</label>
                     <div class="input-group">
                         <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
                         <select class="selectpicker form-control" id="dataferd" name ="dataferd">
@@ -132,13 +144,15 @@
                         </select>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <div class="col-xs-2 col-xs-offset-4">
-                    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" onclick="return validateForm();">Send søknad</a>
+                <div class="form-group">
+                    <div class="col-md-6 inputGroupContainer" style="margin-top: 2em;">
+                        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" onclick="return validateForm();">Send søknad</a>
+                    </div>
                 </div>
             </div>
+
+
         </form>
     </div>
 </div>

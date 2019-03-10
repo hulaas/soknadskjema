@@ -1,0 +1,57 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #60a3bc !important;
+}
+
+.container {
+    width: 100%;
+    background: #60a3bc !important;
+    height: 100%;
+}
+
+.content {
+    margin-top: 8%;
+    float: left;
+    width: 70%;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    margin-left: 15%;
+
+}
+
+.brand_logo {
+    height: 50px;
+    width: 150px;
+    border-radius: 0;
+    border: #60a3bc;
+    margin-left: 39%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form_soknad{
+    margin: 0 auto;
+    width:80%; /* value of your choice which suits your alignment */
+    height: 70%;
+}
+
+input, label {
+
+}
+
+.inputGroupContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px;
+}
