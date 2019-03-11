@@ -13,7 +13,6 @@ html {
 
 .content {
     margin-top: 8%;
-    float: left;
     width: 70%;
     background: #f39c12;
     position: relative;
@@ -26,7 +25,6 @@ html {
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     margin-left: 15%;
-
 }
 
 .brand_logo {
@@ -46,12 +44,9 @@ html {
 }
 
 input, label {
-
+    padding: 0.5em;
 }
 
-.inputGroupContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2px;
+.form-group {
+    width: auto;
 }

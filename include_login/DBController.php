@@ -29,6 +29,14 @@ class DBController
 
     }
 
+    function runBaseQuery($query) {
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if(!empty($result))
+            return $result;
+    }
+
     function bindQueryParams($params, $stmt) {
         foreach ($params as $key => &$val) {
             $stmt->bindParam($key, $val);

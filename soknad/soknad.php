@@ -59,7 +59,7 @@
 
             <div class="form-group">
 
-                <div class="col-md-6 inputGroupContainer">
+                <div class="col-md-3 inputGroupContainer">
                     <label for="city">By</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input id="city" name="city" placeholder="By" class="form-control" required="true" value="" type="text">
@@ -69,7 +69,7 @@
 
             <div class="form-group">
 
-                <div class="col-md-6 inputGroupContainer">
+                <div class="col-md-3 inputGroupContainer">
                     <label for="postkode">Postkode</label>
                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input id="postkode" name="postkode" placeholder="Postkode" class="form-control" required="true" value="" type="text">
@@ -99,7 +99,7 @@
 
             <div class="form-group">
 
-                <div class="col-md-6 inputGroupContainer">
+                <div class="col-md-4 inputGroupContainer">
                     <label for="bil">Har du førerkort og/eller tilgang til bil?</label>
                     <div class="input-group">
                         <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
@@ -114,7 +114,7 @@
 
             <div class="form-group">
 
-                <div class="col-md-6 inputGroupContainer">
+                <div class="col-md-4 inputGroupContainer">
                     <label for="norskferd">Norskferdigheter 1-5</label>
                     <div class="input-group">
                         <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
@@ -131,7 +131,7 @@
 
             <div class="form-group">
 
-                <div class="col-md-6 inputGroupContainer">
+                <div class="col-md-4 inputGroupContainer">
                     <label for="dataferd">Dataferdigheter 1-5</label>
                     <div class="input-group">
                         <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="form-group">
-                    <div class="col-md-6 inputGroupContainer" style="margin-top: 2em;">
+                    <div class="col-md-4 inputGroupContainer" style="margin-top: 2em;">
                         <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" onclick="return validateForm();">Send søknad</a>
                     </div>
                 </div>
